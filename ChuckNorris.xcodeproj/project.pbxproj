@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AB64AD02B546FFE0076AF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB64ACF2B546FFE0076AF4B /* AppDelegate.swift */; };
+		0AB64AD22B546FFE0076AF4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB64AD12B546FFE0076AF4B /* SceneDelegate.swift */; };
+		0AB64AD42B546FFE0076AF4B /* RandomJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB64AD32B546FFE0076AF4B /* RandomJokeViewController.swift */; };
+		0AB64AD92B5470000076AF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB64AD82B5470000076AF4B /* Assets.xcassets */; };
+		0AB64ADC2B5470000076AF4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB64ADA2B5470000076AF4B /* LaunchScreen.storyboard */; };
+		0AB64AE52B5470FA0076AF4B /* JokeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB64AE42B5470FA0076AF4B /* JokeListViewController.swift */; };
+		0AB64AE72B54711C0076AF4B /* CategoryJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB64AE62B54711C0076AF4B /* CategoryJokeViewController.swift */; };
+		0AB64AEA2B5471630076AF4B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB64AE92B5471630076AF4B /* NetworkService.swift */; };
+		0AECBAB22B5741E7003FFF29 /* UIViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AECBAB12B5741E7003FFF29 /* UIViewController+Extention.swift */; };
+		0AF32AAF2B555A78009F62B2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF32AAE2B555A78009F62B2 /* TabBarController.swift */; };
+		0AF32AB22B5574D3009F62B2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF32AB12B5574D3009F62B2 /* Realm */; };
+		0AF32AB42B5574D3009F62B2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0AF32AB32B5574D3009F62B2 /* RealmSwift */; };
+		0AF32AB62B557667009F62B2 /* JokeRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF32AB52B557667009F62B2 /* JokeRealmModel.swift */; };
+		0AF32AB82B558A36009F62B2 /* JokeRealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF32AB72B558A36009F62B2 /* JokeRealmService.swift */; };
+		0AF32ABC2B55BC51009F62B2 /* JokesAtCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF32ABB2B55BC51009F62B2 /* JokesAtCategoryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AB64ACC2B546FFE0076AF4B /* ChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB64ACF2B546FFE0076AF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AB64AD12B546FFE0076AF4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0AB64AD32B546FFE0076AF4B /* RandomJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJokeViewController.swift; sourceTree = "<group>"; };
+		0AB64AD82B5470000076AF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AB64ADB2B5470000076AF4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AB64ADD2B5470000076AF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AB64AE42B5470FA0076AF4B /* JokeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeListViewController.swift; sourceTree = "<group>"; };
+		0AB64AE62B54711C0076AF4B /* CategoryJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryJokeViewController.swift; sourceTree = "<group>"; };
+		0AB64AE92B5471630076AF4B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0AECBAB12B5741E7003FFF29 /* UIViewController+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extention.swift"; sourceTree = "<group>"; };
+		0AF32AAE2B555A78009F62B2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0AF32AB52B557667009F62B2 /* JokeRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRealmModel.swift; sourceTree = "<group>"; };
+		0AF32AB72B558A36009F62B2 /* JokeRealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRealmService.swift; sourceTree = "<group>"; };
+		0AF32ABB2B55BC51009F62B2 /* JokesAtCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesAtCategoryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AB64AC92B546FFE0076AF4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF32AB42B5574D3009F62B2 /* RealmSwift in Frameworks */,
+				0AF32AB22B5574D3009F62B2 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AB64AC32B546FFE0076AF4B = {
+			isa = PBXGroup;
+			children = (
+				0AB64ACE2B546FFE0076AF4B /* ChuckNorris */,
+				0AB64ACD2B546FFE0076AF4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AB64ACD2B546FFE0076AF4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AB64ACC2B546FFE0076AF4B /* ChuckNorris.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AB64ACE2B546FFE0076AF4B /* ChuckNorris */ = {
+			isa = PBXGroup;
+			children = (
+				0AF32AAB2B5557A9009F62B2 /* Models */,
+				0AB64AE82B54714B0076AF4B /* Services */,
+				0AB64AE32B5470A00076AF4B /* ViewControllers */,
+				0AB64ACF2B546FFE0076AF4B /* AppDelegate.swift */,
+				0AB64AD12B546FFE0076AF4B /* SceneDelegate.swift */,
+				0AB64AD82B5470000076AF4B /* Assets.xcassets */,
+				0AB64ADA2B5470000076AF4B /* LaunchScreen.storyboard */,
+				0AB64ADD2B5470000076AF4B /* Info.plist */,
+				0AECBAB12B5741E7003FFF29 /* UIViewController+Extention.swift */,
+			);
+			path = ChuckNorris;
+			sourceTree = "<group>";
+		};
+		0AB64AE32B5470A00076AF4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AB64AD32B546FFE0076AF4B /* RandomJokeViewController.swift */,
+				0AB64AE42B5470FA0076AF4B /* JokeListViewController.swift */,
+				0AB64AE62B54711C0076AF4B /* CategoryJokeViewController.swift */,
+				0AF32ABB2B55BC51009F62B2 /* JokesAtCategoryViewController.swift */,
+				0AF32AAE2B555A78009F62B2 /* TabBarController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0AB64AE82B54714B0076AF4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AB64AE92B5471630076AF4B /* NetworkService.swift */,
+				0AF32AB72B558A36009F62B2 /* JokeRealmService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0AF32AAB2B5557A9009F62B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AF32AB52B557667009F62B2 /* JokeRealmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AB64ACB2B546FFE0076AF4B /* ChuckNorris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB64AE02B5470000076AF4B /* Build configuration list for PBXNativeTarget "ChuckNorris" */;
+			buildPhases = (
+				0AB64AC82B546FFE0076AF4B /* Sources */,
+				0AB64AC92B546FFE0076AF4B /* Frameworks */,
+				0AB64ACA2B546FFE0076AF4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChuckNorris;
+			packageProductDependencies = (
+				0AF32AB12B5574D3009F62B2 /* Realm */,
+				0AF32AB32B5574D3009F62B2 /* RealmSwift */,
+			);
+			productName = ChuckNorris;
+			productReference = 0AB64ACC2B546FFE0076AF4B /* ChuckNorris.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AB64AC42B546FFE0076AF4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0AB64ACB2B546FFE0076AF4B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 0AB64AC72B546FFE0076AF4B /* Build configuration list for PBXProject "ChuckNorris" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AB64AC32B546FFE0076AF4B;
+			packageReferences = (
+				0AF32AB02B5574D3009F62B2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 0AB64ACD2B546FFE0076AF4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AB64ACB2B546FFE0076AF4B /* ChuckNorris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AB64ACA2B546FFE0076AF4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB64ADC2B5470000076AF4B /* LaunchScreen.storyboard in Resources */,
+				0AB64AD92B5470000076AF4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AB64AC82B546FFE0076AF4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB64AE72B54711C0076AF4B /* CategoryJokeViewController.swift in Sources */,
+				0AF32AAF2B555A78009F62B2 /* TabBarController.swift in Sources */,
+				0AF32AB62B557667009F62B2 /* JokeRealmModel.swift in Sources */,
+				0AF32ABC2B55BC51009F62B2 /* JokesAtCategoryViewController.swift in Sources */,
+				0AB64AD42B546FFE0076AF4B /* RandomJokeViewController.swift in Sources */,
+				0AB64AD02B546FFE0076AF4B /* AppDelegate.swift in Sources */,
+				0AECBAB22B5741E7003FFF29 /* UIViewController+Extention.swift in Sources */,
+				0AB64AD22B546FFE0076AF4B /* SceneDelegate.swift in Sources */,
+				0AF32AB82B558A36009F62B2 /* JokeRealmService.swift in Sources */,
+				0AB64AEA2B5471630076AF4B /* NetworkService.swift in Sources */,
+				0AB64AE52B5470FA0076AF4B /* JokeListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AB64ADA2B5470000076AF4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB64ADB2B5470000076AF4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AB64ADE2B5470000076AF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AB64ADF2B5470000076AF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AB64AE12B5470000076AF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWQ84V5ZHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChuckNorris/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sngrv.ChuckNorris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AB64AE22B5470000076AF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QWQ84V5ZHW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChuckNorris/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sngrv.ChuckNorris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AB64AC72B546FFE0076AF4B /* Build configuration list for PBXProject "ChuckNorris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB64ADE2B5470000076AF4B /* Debug */,
+				0AB64ADF2B5470000076AF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB64AE02B5470000076AF4B /* Build configuration list for PBXNativeTarget "ChuckNorris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB64AE12B5470000076AF4B /* Debug */,
+				0AB64AE22B5470000076AF4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0AF32AB02B5574D3009F62B2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0AF32AB12B5574D3009F62B2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AF32AB02B5574D3009F62B2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		0AF32AB32B5574D3009F62B2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AF32AB02B5574D3009F62B2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0AB64AC42B546FFE0076AF4B /* Project object */;
+}
